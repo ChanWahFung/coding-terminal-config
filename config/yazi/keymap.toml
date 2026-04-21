@@ -1,0 +1,4 @@
+[mgr]
+prepend_keymap = [
+  { on = [ "g", "r" ], run = "search --via=rg --args=\"--hidden -g !.git\"", desc = "Search contents with ripgrep" },
+]

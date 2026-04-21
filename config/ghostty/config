@@ -1,0 +1,61 @@
+# ============================================
+# Ghostty 配置
+# ============================================
+
+# --- 字体与排版 ---
+font-family = "JetBrainsMono Nerd Font"
+font-size = 13
+foreground = #fbfbfb
+palette = 15= #ffffff
+
+# 调暗 diff 常用红/绿背景，避免白字刺眼
+#palette = 1=#7d2b33
+#palette = 2=#2f5d3b
+#palette = 9=#a33a45
+#palette = 10=#3f7a4e
+adjust-cell-height = 2
+
+# --- 主题与颜色 ---
+theme = "Catppuccin Mocha"
+
+# --- 窗口与外观 ---
+background-opacity = 0.85
+background-blur-radius = 30
+macos-titlebar-style = transparent
+window-padding-x = 15
+window-padding-y = 15
+window-save-state = always
+
+# --- 光标 ---
+cursor-style = bar
+cursor-style-blink = true
+cursor-opacity = 0.8
+
+# --- 鼠标与剪贴板 ---
+mouse-hide-while-typing = true
+copy-on-select = clipboard
+
+# --- Shell 集成 ---
+shell-integration = zsh
+
+# 窗口行为
+initial-window = true
+quit-after-last-window-closed = true
+notify-on-command-finish = always
+
+# --- 核心快捷键 ---
+# 分屏
+keybind = cmd+d=new_split:right
+keybind = cmd+shift+d=new_split:down
+# --- 窗格导航快捷键 ---
+# 使用 Cmd + 方向键 在不同窗格间快速切换
+keybind = cmd+left=goto_split:left
+keybind = cmd+right=goto_split:right
+keybind = cmd+up=goto_split:top
+keybind = cmd+down=goto_split:bottom
+# 最大化/还原窗格
+keybind = cmd+shift+enter=toggle_split_zoom
+# 关闭窗格 (macOS 原生习惯)
+keybind = cmd+w=close_window
+# quick termina: ctrl + `
+keybind = global:ctrl+grave_accent=toggle_quick_terminal
